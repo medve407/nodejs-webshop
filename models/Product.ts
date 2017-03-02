@@ -13,5 +13,4 @@ class Product extends Model {
 		this.data = data;
 	}
 }
-
 export = Product;
