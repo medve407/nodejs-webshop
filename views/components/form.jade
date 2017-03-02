@@ -1,0 +1,12 @@
+form(method='POST' action='#{actionLink}')
+    .form-group
+        label(for='email') Email address:
+        input#email.form-control(type='email' name='email')
+    .form-group
+        label(for='pwd') Password:
+        input#pwd.form-control(type='password' name='password')
+    if login
+        button.btn.btn-default(type='submit' name='submit') Submit
+    else
+        button.btn.btn-default(type='submit' name='submit') Registration
+    input(type='hidden' name='_csrf' value='#{csrfToken}')
