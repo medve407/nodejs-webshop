@@ -1,0 +1,13 @@
+extends ../layout
+block content
+    .panel.panel-default
+        .panel-heading
+            h3.panel-title=product.title
+        .panel-body
+            .col-md-6.text-center
+                img(src='...', alt='...')
+            .col-md-6
+                .caption
+                    h4=product.longDescription
+                    h4=product.price
+                    a.btn.btn-primary(id='#{product.id}' href='#', role='button') Kosárba
