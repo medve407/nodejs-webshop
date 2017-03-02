@@ -1,10 +1,9 @@
-.row
-    .col-sm-6.col-md-4
-        .thumbnail
-            img(src='...', alt='...')
-            .caption
-                h3 Thumbnail label
-                p ...
-                p
-                    a.btn.btn-primary(href='#', role='button') Kosárba
-                    a.btn.btn-default(href='#', role='button') Részletek
+.col-sm-4
+    .thumbnail
+        img(src='...', alt='...')
+        .caption
+            h3=product.title
+            p=product.shortDesciprtion
+            p=product.price
+                a.btn.btn-primary(id='#{product.id}' href='#', role='button') Kosárba
+                a.btn.btn-default( href='./#{product.id}', role='button') Részletek
