@@ -1,7 +1,7 @@
 let BaseController = require('../Framewoork/Controller/BaseController');
 let Product 	   = require('../models/Product');
 
-class ProductController extends BaseController {
+class ProductController {
 
 	// It return the index of the product with Products if they are exists.
 	public static listProducts(req,res):any {
